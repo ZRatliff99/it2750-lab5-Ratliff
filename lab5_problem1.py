@@ -63,7 +63,7 @@ def main():  # DO NOT EDIT THIS LINE
     combinedstring = string1 + string2
     string3 = ""
 
-    for char in combinedstring
+    for char in combinedstring:
         if "A" <=char =<"M"
             string3 += chr(ord(char) + 1)
         elif "N" <= char <= "Z":
