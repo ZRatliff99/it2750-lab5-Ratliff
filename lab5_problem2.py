@@ -3,8 +3,8 @@
 # Cuyahoga Community College
 # Lab 5 – Problem 2
 # ==================================================
-# Student Name: YOUR_NAME_HERE
-# Student Email: YOUR_EMAIL_HERE
+# Student Name: Zachary Ratliff
+# Student Email: zachary.ratliff@tri-c.edu
 # ==================================================
 
 alphabet = "abcdefghijklmnopqrstuvwxyz"
@@ -43,7 +43,16 @@ def encrypt_message(plaintext, key):
 # Hint: the plaintext sent to encrypted_text as an argument for the plaintext
 # parameter should match the output of decrypt_message function
 
-## YOUR CODE HERE ##
+def decrypt_message(ciphertext, key):
+    plaintext = ""
+
+    for char in ciphertext:
+        if key.find(char) > - 1:
+            plaintext += alphabet[key.find(char)]
+        else:
+            plaintext += char
+    
+    return plaintext
 
 def main():  # DO NOT EDIT THIS LINE
 
@@ -63,7 +72,7 @@ def main():  # DO NOT EDIT THIS LINE
     # from a function call to encrypt_message, passing along the input_text and
     # the key
 
-    ## YOUR CODE HERE ##
+    encrypted_text = encrypt_message(input_text, key)
 
     # PART D
     # ======
@@ -71,7 +80,7 @@ def main():  # DO NOT EDIT THIS LINE
     # from a function call to decrypt_message, passing along the encrypted_text and
     # the key
 
-    ## YOUR CODE HERE ##
+    decrypted_text = decrypt_message(encrypted_text, key)
 
     # PART E
     # ======
@@ -86,7 +95,9 @@ def main():  # DO NOT EDIT THIS LINE
     # of those variables. Do not add any additional content and make sure each print
     # statement displays on a separate line
 
-    ## YOUR CODE HERE ##
+    print("Original message: " + input_text)
+    print("Encrypted message: "+ encrypted_text)
+    print("Decrypted message: " + decrypted_text)
 
     return  # DO NOT EDIT THIS LINE
 
