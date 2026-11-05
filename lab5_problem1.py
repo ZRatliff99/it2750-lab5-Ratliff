@@ -34,7 +34,7 @@ def main():  # DO NOT EDIT THIS LINE
     # Iterate through each character in string1 and print each character to a new
     # line using print statements
 
-    for char in string2
+    for char in string2:
         print(char)
 
     # PART D
