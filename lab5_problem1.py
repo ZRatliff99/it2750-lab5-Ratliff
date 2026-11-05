@@ -17,7 +17,7 @@ def main():  # DO NOT EDIT THIS LINE
     # ABCDEFG and string2 should read TUVWXYZ. Print each variable to the screen
     # using individual print statements
 
-    string1 = "ABCEDFG"
+    string1 = "ABCDEFG"
     string2 = "TUVWXYZ"
     print(string1)
     print(string2)
